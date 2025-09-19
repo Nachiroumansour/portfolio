@@ -1,0 +1,21 @@
+/* Light theme customizations and theme toggle button */
+.theme-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.05);
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+  cursor: pointer;
+}
+.theme-toggle:hover { transform: translateY(-2px); background: rgba(0,0,0,0.08); border-color: #111; }
+.theme-toggle .icon { font-size: 18px; line-height: 1; }

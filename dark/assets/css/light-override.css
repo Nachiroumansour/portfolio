@@ -1,0 +1,237 @@
+/* Light mode overrides loaded only when theme-toggle.js enables them.
+   Goal: match Light folder visuals but with blue accent and improved contrast. */
+
+/* Accent color: replace green with blue */
+:root {
+  /* Match the dark theme main blue exactly */
+  --maincolor: #2196F3; /* primary blue */
+  --accent-blue: #2196F3;
+  --accent-blue-2: #1976D2;
+}
+
+/* Text & backgrounds for readability in light mode */
+body.sub-bg,
+.main-bg,
+.section-padding,
+.sec-box {
+  background-color: #f7f8fb !important;
+}
+
+body,
+body p,
+.fz-12,
+.fz-13,
+.fz-14,
+.fz-16,
+.fz-18,
+.fz-20,
+.fz-28,
+.fz-55,
+h1, h2, h3, h4, h5, h6 {
+  color: #121212;
+}
+
+/* Utility color helpers */
+.main-color { color: var(--accent-blue) !important; }
+.bord-color { background-color: var(--accent-blue) !important; }
+.bord-thin-top { border-top-color: rgba(0,0,0,0.08) !important; }
+.bord-thin-bottom { border-bottom-color: rgba(0,0,0,0.08) !important; }
+
+/* Buttons */
+.butn { color: #111; }
+.butn .text { color: inherit; }
+.butn.bg-white { background: #ffffff; border-color: rgba(0,0,0,0.12); }
+.butn-bord { border-color: var(--accent-blue) !important; color: var(--accent-blue) !important; }
+.butn-bord:hover { background: var(--accent-blue) !important; color: #fff !important; }
+
+/* Links */
+a { color: #0d47a1; }
+a:hover { color: var(--accent-blue-2); }
+
+/* Navbar */
+.nav-top { background: transparent !important; box-shadow: none !important; backdrop-filter: none !important; }
+.navbar-nav.main-bg > li > a span { color: #111; }
+.navbar-nav.main-bg > li > a:hover span { color: var(--accent-blue); }
+.navbar .navbar-nav { background: transparent !important; }
+.navbar .navbar-nav:after { border-bottom-color: transparent !important; }
+
+/* Cards / items */
+.item, .box, .info, .blog .item .box, .portfolio .item .cont, .sub-bg {
+  background: #ffffff; color: #111; border-color: rgba(0,0,0,0.08);
+}
+.item .tag { color: var(--accent-blue); }
+
+/* Theme toggle visibility on light bg */
+.theme-toggle {
+  border: 1px solid rgba(0,0,0,0.15) !important;
+  background: rgba(0,0,0,0.06) !important;
+  color: #111 !important;
+}
+.theme-toggle:hover { border-color: var(--accent-blue) !important; background: rgba(0,0,0,0.08) !important; }
+
+/* Progress circle color */
+.progress-wrap svg path { stroke: var(--accent-blue) !important; }
+
+/* Section headings */
+.sec-head .sub-title { color: rgba(0,0,0,0.6) !important; }
+
+/* Blog meta */
+.date i { color: var(--accent-blue) !important; }
+
+/* Selection */
+::selection { background: rgba(30,136,255,0.25); color: #111; }
+
+/* Footer */
+footer { background: #f0f3f9; color: #111; }
+footer a { color: var(--accent-blue); }
+
+/* ===== Enhanced visibility for Light mode ===== */
+/* Resume / Timeline cards */
+.resume .item, .timeline .item, .experience .item, .award-item, .services .item, .features .item {
+  background: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06) !important;
+}
+.resume .item, .timeline .item, .experience .item {
+  /* Set a default readable color for all text inside */
+  color: rgba(0,0,0,0.55) !important;
+}
+/* Make all nested text inherit that readable color by default */
+.resume .item *:not(.date):not(.badge):not(.tag),
+.timeline .item *:not(.date):not(.badge):not(.tag),
+.experience .item *:not(.date):not(.badge):not(.tag) {
+  color: inherit !important;
+}
+
+/* Final safeguard: force ALL descendants to a readable dark tone (then headings/badges re-assert) */
+.resume .item *,
+.timeline .item *,
+.experience .item * {
+  color: rgba(0,0,0,0.6) !important;
+}
+.resume .item p,
+.resume .item span,
+.resume .item .fz-12,
+.resume .item .fz-13,
+.resume .item .fz-14,
+.resume .item .fz-15,
+.resume .item .fz-16,
+.resume .item .sub-title,
+.resume .item .desc,
+.timeline .item p,
+.timeline .item span,
+.timeline .item .fz-12,
+.timeline .item .fz-13,
+.timeline .item .fz-14,
+.timeline .item .fz-15,
+.timeline .item .fz-16,
+.timeline .item .sub-title,
+.timeline .item .desc,
+.experience .item p,
+.experience .item span,
+.experience .item .fz-12,
+.experience .item .fz-13,
+.experience .item .fz-14,
+.experience .item .fz-15,
+.experience .item .fz-16,
+.experience .item .sub-title,
+.experience .item .desc { color: rgba(0,0,0,0.55) !important; opacity: 1 !important; }
+.resume .item h3, .resume .item h4, .resume .item h5, .resume .item h6,
+.timeline .item h3, .timeline .item h4, .timeline .item h5, .timeline .item h6,
+.experience .item h3, .experience .item h4, .experience .item h5, .experience .item h6 { color: #0b0b0b !important; }
+.resume .item .sub-title, .timeline .item .sub-title, .experience .item .sub-title { color: rgba(0,0,0,0.6) !important; opacity: 1 !important; }
+
+/* Body copy in cards to 55% black for better hierarchy */
+.resume .item p,
+.timeline .item p,
+.experience .item p,
+.resume .item .desc,
+.timeline .item .desc,
+.experience .item .desc { color: rgba(0,0,0,0.55) !important; }
+
+/* Hard override for any remaining white text coming from base styles */
+.resume .item a, .resume .item li, .resume .item small, .resume .item strong, .resume .item em,
+.timeline .item a, .timeline .item li, .timeline .item small, .timeline .item strong, .timeline .item em,
+.experience .item a, .experience .item li, .experience .item small, .experience .item strong, .experience .item em {
+  color: rgba(0,0,0,0.55) !important;
+}
+
+/* Make headings truly dark to stand out */
+.resume .item h1, .resume .item h2, .resume .item h3, .resume .item h4, .resume .item h5, .resume .item h6,
+.timeline .item h1, .timeline .item h2, .timeline .item h3, .timeline .item h4, .timeline .item h5, .timeline .item h6,
+.experience .item h1, .experience .item h2, .experience .item h3, .experience .item h4, .experience .item h5, .experience .item h6 {
+  color: #111 !important;
+}
+
+/* If any wrapper uses [data-overlay-dark], force inner text back to dark inside items */
+.resume .item [data-overlay-dark], .timeline .item [data-overlay-dark], .experience .item [data-overlay-dark] {
+  color: #111 !important;
+}
+/* Neutralize any opacity utilities inside items */
+.resume .item [class*="opacity-"],
+.timeline .item [class*="opacity-"],
+.experience .item [class*="opacity-"] { opacity: 1 !important; }
+.resume .item .date, .timeline .item .date, .experience .item .date {
+  background: rgba(33,150,243,0.08) !important;
+  color: #0f172a !important;
+}
+.resume .item .tag, .timeline .item .tag, .experience .item .tag {
+  color: var(--accent-blue) !important;
+}
+.resume .item:hover, .timeline .item:hover, .experience .item:hover, .services .item:hover {
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08) !important;
+  border-color: rgba(0,0,0,0.12) !important;
+}
+
+/* Services cards */
+.services .item .icon {
+  opacity: 0.9 !important;
+}
+.services .item .title, .services .item h6, .services .item h5 {
+  color: #0b0b0b !important;
+}
+.services .item p { color: #222 !important; }
+.services .item { border-left: 3px solid rgba(33,150,243,0.4) !important; }
+
+/* Accent lines / badges */
+.line, .bord-color, .progress-bar, .badge, .dot, .bullet {
+  background-color: var(--accent-blue) !important;
+  border-color: var(--accent-blue) !important;
+}
+
+/* Intro (en-tête) cards: fond Light rétabli */
+.intro-profile .box-img.main-bg,
+.intro-profile .content.main-bg {
+  background: #f7f8fb !important;
+}
+
+/* Remove background for email strip and name box */
+.nav-top .info,
+.intro-profile .info {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Portfolio/Works cards: pas de fond ni gradient */
+.portfolio .item,
+.portfolio .item .img,
+.portfolio .item .cont,
+.works .item,
+.works .item .img,
+.works .item .cont {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.portfolio .item:before,
+.portfolio .item:after,
+.portfolio .item .img:before,
+.portfolio .item .img:after,
+.works .item:before,
+.works .item:after,
+.works .item .img:before,
+.works .item .img:after {
+  background: none !important;
+  background-image: none !important;
+}

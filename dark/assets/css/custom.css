@@ -1,0 +1,460 @@
+/* Styles personnalisés pour le portfolio de Mansour Nachirou */
+
+/* Bouton bascule Light/Dark */
+.theme-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--maincolor);
+}
+
+.theme-toggle .icon { font-size: 18px; line-height: 1; }
+
+/* Badge de date */
+.date-badge {
+    background: var(--maincolor);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Éléments d'expérience */
+.exp-item {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.exp-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--maincolor);
+    opacity: 0.7;
+}
+
+.exp-item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--maincolor);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.exp-item:hover::before {
+    opacity: 1;
+    width: 6px;
+}
+
+.exp-item h6 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.exp-item p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.exp-item .date-badge {
+    font-size: 11px;
+    padding: 6px 12px;
+    background: var(--maincolor);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Élément de formation */
+.formation-item {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.formation-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--maincolor), #2196F3);
+}
+
+.formation-item h6 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.formation-item p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.formation-item .date-badge {
+    background: linear-gradient(135deg, var(--maincolor), #2196F3);
+    font-size: 12px;
+    padding: 8px 15px;
+}
+
+/* Styles pour la section compétences améliorée */
+.skills {
+    padding: 0 15px;
+}
+
+.skill-category {
+    margin-bottom: 60px;
+    padding: 0 10px;
+}
+
+.skill-category:last-child {
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--maincolor);
+    border-radius: 2px;
+}
+
+.skill-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.skills .item:hover .skill-icon {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+.skills .item {
+    transition: all 0.3s ease;
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.skills .item .d-flex {
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.skills .item h6 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skills .item span.fz-12 {
+    font-size: 13px;
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+.skill-progress {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    height: 8px;
+    margin-top: auto;
+}
+
+.skill-progress .progres {
+    background: linear-gradient(90deg, var(--maincolor), #2196F3);
+    border-radius: 12px;
+    transition: width 1.5s ease-in-out;
+    height: 100%;
+}
+
+.skills .value {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--maincolor);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .exp-item {
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+    
+    .exp-item h6 {
+        font-size: 15px;
+    }
+    
+    .exp-item p {
+        font-size: 13px;
+    }
+    
+    .formation-item {
+        padding: 25px;
+        margin-top: 25px;
+    }
+    
+    .formation-item h6 {
+        font-size: 16px;
+    }
+    
+    .formation-item p {
+        font-size: 14px;
+    }
+    
+    .date-badge {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    
+    .exp-item .date-badge {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    
+    .formation-item .date-badge {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+    
+    .skill-category {
+        margin-bottom: 30px;
+    }
+    
+    .category-title {
+        font-size: 18px;
+    }
+    
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .skills {
+        padding: 0 10px;
+    }
+    
+    .skill-category {
+        margin-bottom: 40px;
+        padding: 0 5px;
+    }
+    
+    .category-title {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+    
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .skills .item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .skills .item h6 {
+        font-size: 16px;
+    }
+    
+    .skills .item span.fz-12 {
+        font-size: 12px;
+    }
+    
+    .skills .item .d-flex {
+        margin-bottom: 20px;
+    }
+    
+    .skill-progress {
+        height: 6px;
+    }
+    
+    .skills .value {
+        font-size: 12px;
+        top: -22px;
+    }
+    
+    /* Timeline responsive */
+    .timeline-item::before {
+        left: -15px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .timeline-item::after {
+        left: -11px;
+    }
+    
+    .timeline .exp-item {
+        margin-left: 15px;
+    }
+    
+    .section-subtitle {
+        font-size: 20px;
+    }
+}
+
+/* Styles pour le parcours professionnel */
+.professional-journey {
+    text-align: left;
+}
+
+.section-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--maincolor);
+    border-radius: 2px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 0;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: var(--maincolor);
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 32px;
+    width: 2px;
+    height: calc(100% + 20px);
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.timeline .exp-item {
+    margin-left: 20px;
+    position: relative;
+}
+
+/* Animation pour les éléments */
+.exp-item, .formation-item, .skills .item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

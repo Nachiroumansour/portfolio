@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "portfolio-dev",
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/dark/home.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\.(css|js|png|jpg|jpeg|gif|svg|webp|ico)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
