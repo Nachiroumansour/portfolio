@@ -17,6 +17,23 @@ body.sub-bg,
   background-color: #f7f8fb !important;
 }
 
+/* Force light background for all sections */
+body,
+.main-bg,
+.sub-bg,
+.section-padding,
+.sec-box,
+.about,
+.services,
+.portfolio,
+.works,
+.testimonials,
+.pricing,
+.blog,
+.contact {
+  background-color: #f7f8fb !important;
+}
+
 body,
 body p,
 .fz-12,
@@ -234,4 +251,69 @@ footer a { color: var(--accent-blue); }
 .works .item .img:after {
   background: none !important;
   background-image: none !important;
+}
+
+/* ===== CORRECTION MAJEURE POUR TOUTES LES SECTIONS ===== */
+/* Force dark text on all sections for light mode */
+.about *,
+.services *,
+.portfolio *,
+.works *,
+.testimonials *,
+.pricing *,
+.blog *,
+.contact *,
+.resume *,
+.timeline *,
+.experience *,
+.professional-journey * {
+  color: #121212 !important;
+}
+
+/* Specific overrides for problematic sections */
+.about p,
+.services p,
+.portfolio p,
+.works p,
+.testimonials p,
+.pricing p,
+.blog p,
+.contact p,
+.resume p,
+.timeline p,
+.experience p,
+.professional-journey p {
+  color: #333333 !important;
+}
+
+/* Headings in all sections */
+.about h1, .about h2, .about h3, .about h4, .about h5, .about h6,
+.services h1, .services h2, .services h3, .services h4, .services h5, .services h6,
+.portfolio h1, .portfolio h2, .portfolio h3, .portfolio h4, .portfolio h5, .portfolio h6,
+.works h1, .works h2, .works h3, .works h4, .works h5, .works h6,
+.testimonials h1, .testimonials h2, .testimonials h3, .testimonials h4, .testimonials h5, .testimonials h6,
+.pricing h1, .pricing h2, .pricing h3, .pricing h4, .pricing h5, .pricing h6,
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6,
+.contact h1, .contact h2, .contact h3, .contact h4, .contact h5, .contact h6,
+.resume h1, .resume h2, .resume h3, .resume h4, .resume h5, .resume h6,
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6,
+.experience h1, .experience h2, .experience h3, .experience h4, .experience h5, .experience h6,
+.professional-journey h1, .professional-journey h2, .professional-journey h3, .professional-journey h4, .professional-journey h5, .professional-journey h6 {
+  color: #0b0b0b !important;
+}
+
+/* Force visibility for all text elements */
+.about span, .about div, .about li, .about small, .about strong, .about em,
+.services span, .services div, .services li, .services small, .services strong, .services em,
+.portfolio span, .portfolio div, .portfolio li, .portfolio small, .portfolio strong, .portfolio em,
+.works span, .works div, .works li, .works small, .works strong, .works em,
+.testimonials span, .testimonials div, .testimonials li, .testimonials small, .testimonials strong, .testimonials em,
+.pricing span, .pricing div, .pricing li, .pricing small, .pricing strong, .pricing em,
+.blog span, .blog div, .blog li, .blog small, .blog strong, .blog em,
+.contact span, .contact div, .contact li, .contact small, .contact strong, .contact em,
+.resume span, .resume div, .resume li, .resume small, .resume strong, .resume em,
+.timeline span, .timeline div, .timeline li, .timeline small, .timeline strong, .timeline em,
+.experience span, .experience div, .experience li, .experience small, .experience strong, .experience em,
+.professional-journey span, .professional-journey div, .professional-journey li, .professional-journey small, .professional-journey strong, .professional-journey em {
+  color: #333333 !important;
 }
