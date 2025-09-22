@@ -991,6 +991,53 @@ footer a { color: var(--accent-blue); }
   filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) !important;
 }
 
+/* ===== LOGO MOBILE ===== */
+/* Réduire la taille du logo sur mobile */
+@media (max-width: 768px) {
+  .header .logo img,
+  .navbar .logo img,
+  .nav-top .logo img {
+    max-width: 40px !important;
+    height: auto !important;
+  }
+  
+  .header .logo,
+  .navbar .logo,
+  .nav-top .logo {
+    max-width: 80px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo img,
+  .navbar .logo img,
+  .nav-top .logo img {
+    max-width: 60px !important;
+    height: auto !important;
+  }
+  
+  .header .logo,
+  .navbar .logo,
+  .nav-top .logo {
+    max-width: 60px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .header .logo img,
+  .navbar .logo img,
+  .nav-top .logo img {
+    max-width: 50px !important;
+    height: auto !important;
+  }
+  
+  .header .logo,
+  .navbar .logo,
+  .nav-top .logo {
+    max-width: 50px !important;
+  }
+}
+
 /* Titre des témoignages */
 .testimonials h1,
 .testimonials h2,
