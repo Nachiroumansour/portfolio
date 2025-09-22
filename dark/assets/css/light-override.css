@@ -10,15 +10,18 @@
 }
 
 /* Text & backgrounds for readability in light mode */
+body {
+  background-color: #ffffff !important;
+}
+
 body.sub-bg,
 .main-bg,
 .section-padding,
 .sec-box {
-  background-color: #f7f8fb !important;
+  background-color: #E7EAEE ;
 }
 
 /* Force light background for all sections */
-body,
 .main-bg,
 .sub-bg,
 .section-padding,
@@ -31,7 +34,7 @@ body,
 .pricing,
 .blog,
 .contact {
-  background-color: #f7f8fb !important;
+  background-color: #E7EAEE !important;
 }
 
 body,
@@ -72,6 +75,409 @@ a:hover { color: var(--accent-blue-2); }
 .navbar .navbar-nav { background: transparent !important; }
 .navbar .navbar-nav:after { border-bottom-color: transparent !important; }
 
+/* Header - Remove all backgrounds */
+header,
+.navbar,
+.nav-top,
+.navbar-nav,
+.navbar-brand,
+.navbar-toggler,
+.navbar-collapse,
+.nav-top .social-links a,
+.nav-top .icon-box,
+.nav-top > *,
+.nav-top .container,
+.nav-top .row,
+.nav-top .col,
+.nav-top .social-icon,
+.nav-top .icon,
+.nav-top a {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  border: none !important;
+}
+
+/* Header elements */
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a span,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:hover span {
+  color: #111 !important;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:hover span {
+  color: var(--accent-blue) !important;
+}
+
+/* ===== ICÔNES SOCIALES TRANSPARENTES ===== */
+/* Enlever tous les backgrounds des icônes sociales */
+.nav-top .social-links a,
+.nav-top .social-icon,
+.nav-top .icon,
+.nav-top a[href*="behance"],
+.nav-top a[href*="github"],
+.nav-top a[href*="linkedin"],
+.nav-top a[href*="dribbble"],
+.nav-top .icon-box,
+.nav-top .social-box,
+.nav-top a,
+.nav-top .social-links,
+.nav-top .social-icons,
+.nav-top .icon-container,
+.nav-top .social-container,
+.nav-top .header-social,
+.nav-top .social-media,
+.nav-top .social-buttons,
+.nav-top .social-item,
+.nav-top .social-link,
+.nav-top .social-btn,
+.nav-top .icon-link,
+.nav-top .icon-btn,
+.nav-top .social-icon-wrapper,
+.nav-top .icon-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+}
+
+/* Enlever les backgrounds des conteneurs d'icônes */
+.nav-top .social-links,
+.nav-top .social-icons,
+.nav-top .icon-container,
+.nav-top .social-container,
+.nav-top .header-social,
+.nav-top .social-media,
+.nav-top .social-buttons {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Cibler spécifiquement les icônes flottantes */
+.nav-top .floating-icon,
+.nav-top .overlay-icon,
+.nav-top .profile-icon,
+.nav-top .social-overlay {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ===== CARTE DE PROFIL TRANSPARENTE ===== */
+/* Enlever le background blanc de la carte de profil */
+.profile-card,
+.profile,
+.profile-box,
+.profile-container,
+.profile-wrapper,
+.intro-profile,
+.profile-section,
+.profile-area,
+.profile-content,
+.profile-info,
+.profile-details,
+.profile-header,
+.profile-body,
+.profile-footer,
+.profile-social,
+.profile-socials,
+.profile-links,
+.profile-buttons,
+.profile-icons,
+.profile-actions,
+.profile-cta,
+.profile-availability,
+.profile-status,
+.profile-name,
+.profile-title,
+.profile-subtitle,
+.profile-description,
+.profile-bio,
+.profile-about,
+.profile-summary,
+.profile-intro,
+.profile-presentation,
+.profile-overview,
+.profile-highlight,
+.profile-featured,
+.profile-main,
+.profile-primary,
+.profile-hero,
+.profile-banner,
+.profile-showcase,
+.profile-display,
+.profile-presentation-card,
+.profile-intro-card,
+.profile-hero-card,
+.profile-main-card,
+.profile-primary-card,
+.profile-featured-card,
+.profile-showcase-card,
+.profile-display-card,
+.profile-banner-card,
+.profile-highlight-card,
+.profile-overview-card,
+.profile-summary-card,
+.profile-bio-card,
+.profile-about-card,
+.profile-description-card,
+.profile-title-card,
+.profile-subtitle-card,
+.profile-name-card,
+.profile-status-card,
+.profile-availability-card,
+.profile-cta-card,
+.profile-actions-card,
+.profile-icons-card,
+.profile-buttons-card,
+.profile-links-card,
+.profile-socials-card,
+.profile-social-card,
+.profile-footer-card,
+.profile-body-card,
+.profile-header-card,
+.profile-details-card,
+.profile-info-card,
+.profile-content-card,
+.profile-wrapper-card,
+.profile-container-card,
+.profile-box-card,
+.profile-section-card,
+.profile-area-card,
+.profile-intro-card,
+.profile-presentation-card,
+.profile-hero-card,
+.profile-main-card,
+.profile-primary-card,
+.profile-featured-card,
+.profile-showcase-card,
+.profile-display-card,
+.profile-banner-card,
+.profile-highlight-card,
+.profile-overview-card,
+.profile-summary-card,
+.profile-bio-card,
+.profile-about-card,
+.profile-description-card,
+.profile-title-card,
+.profile-subtitle-card,
+.profile-name-card,
+.profile-status-card,
+.profile-availability-card,
+.profile-cta-card,
+.profile-actions-card,
+.profile-icons-card,
+.profile-buttons-card,
+.profile-links-card,
+.profile-socials-card,
+.profile-social-card,
+.profile-footer-card,
+.profile-body-card,
+.profile-header-card,
+.profile-details-card,
+.profile-info-card,
+.profile-content-card,
+.profile-wrapper-card,
+.profile-container-card,
+.profile-box-card,
+.profile-section-card,
+.profile-area-card {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+}
+
+/* ===== ICÔNES SERVICES EN NOIR/GRIS ===== */
+/* Icônes des services en noir ou gris #E7EAEE */
+.services .icon,
+.services .service-icon,
+.services .serv-icon,
+.services .icon-box,
+.services .icon-container,
+.services .service-icon-box,
+.services .serv-icon-box,
+.services .icon-wrapper,
+.services .service-icon-wrapper,
+.services .serv-icon-wrapper,
+.services .icon-item,
+.services .service-icon-item,
+.services .serv-icon-item,
+.services .icon-link,
+.services .service-icon-link,
+.services .serv-icon-link,
+.services .icon-img,
+.services .service-icon-img,
+.services .serv-icon-img,
+.services .icon-image,
+.services .service-icon-image,
+.services .serv-icon-image,
+.services .icon-svg,
+.services .service-icon-svg,
+.services .serv-icon-svg,
+.services .icon-symbol,
+.services .service-icon-symbol,
+.services .serv-icon-symbol,
+.services .icon-element,
+.services .service-icon-element,
+.services .serv-icon-element,
+.services .icon-component,
+.services .service-icon-component,
+.services .serv-icon-component,
+.services .icon-part,
+.services .service-icon-part,
+.services .serv-icon-part,
+.services .icon-piece,
+.services .service-icon-piece,
+.services .serv-icon-piece,
+.services .icon-section,
+.services .service-icon-section,
+.services .serv-icon-section,
+.services .icon-area,
+.services .service-icon-area,
+.services .serv-icon-area,
+.services .icon-zone,
+.services .service-icon-zone,
+.services .serv-icon-zone,
+.services .icon-region,
+.services .service-icon-region,
+.services .serv-icon-region,
+.services .icon-block,
+.services .service-icon-block,
+.services .serv-icon-block,
+.services .icon-div,
+.services .service-icon-div,
+.services .serv-icon-div,
+.services .icon-span,
+.services .service-icon-span,
+.services .serv-icon-span,
+.services .icon-p,
+.services .service-icon-p,
+.services .serv-icon-p,
+.services .icon-h1,
+.services .service-icon-h1,
+.services .serv-icon-h1,
+.services .icon-h2,
+.services .service-icon-h2,
+.services .serv-icon-h2,
+.services .icon-h3,
+.services .service-icon-h3,
+.services .serv-icon-h3,
+.services .icon-h4,
+.services .service-icon-h4,
+.services .serv-icon-h4,
+.services .icon-h5,
+.services .service-icon-h5,
+.services .serv-icon-h5,
+.services .icon-h6,
+.services .service-icon-h6,
+.services .serv-icon-h6 {
+  color: #E7EAEE !important;
+  fill: #E7EAEE !important;
+  stroke: #E7EAEE !important;
+  background-color: transparent !important;
+  border-color: #E7EAEE !important;
+}
+
+/* Icônes des services en noir pour plus de contraste */
+.services .icon:hover,
+.services .service-icon:hover,
+.services .serv-icon:hover,
+.services .icon-box:hover,
+.services .icon-container:hover,
+.services .service-icon-box:hover,
+.services .serv-icon-box:hover,
+.services .icon-wrapper:hover,
+.services .service-icon-wrapper:hover,
+.services .serv-icon-wrapper:hover,
+.services .icon-item:hover,
+.services .service-icon-item:hover,
+.services .serv-icon-item:hover,
+.services .icon-link:hover,
+.services .service-icon-link:hover,
+.services .serv-icon-link:hover,
+.services .icon-img:hover,
+.services .service-icon-img:hover,
+.services .serv-icon-img:hover,
+.services .icon-image:hover,
+.services .service-icon-image:hover,
+.services .serv-icon-image:hover,
+.services .icon-svg:hover,
+.services .service-icon-svg:hover,
+.services .serv-icon-svg:hover,
+.services .icon-symbol:hover,
+.services .service-icon-symbol:hover,
+.services .serv-icon-symbol:hover,
+.services .icon-element:hover,
+.services .service-icon-element:hover,
+.services .serv-icon-element:hover,
+.services .icon-component:hover,
+.services .service-icon-component:hover,
+.services .serv-icon-component:hover,
+.services .icon-part:hover,
+.services .service-icon-part:hover,
+.services .serv-icon-part:hover,
+.services .icon-piece:hover,
+.services .service-icon-piece:hover,
+.services .serv-icon-piece:hover,
+.services .icon-section:hover,
+.services .service-icon-section:hover,
+.services .serv-icon-section:hover,
+.services .icon-area:hover,
+.services .service-icon-area:hover,
+.services .serv-icon-area:hover,
+.services .icon-zone:hover,
+.services .service-icon-zone:hover,
+.services .serv-icon-zone:hover,
+.services .icon-region:hover,
+.services .service-icon-region:hover,
+.services .serv-icon-region:hover,
+.services .icon-block:hover,
+.services .service-icon-block:hover,
+.services .serv-icon-block:hover,
+.services .icon-div:hover,
+.services .service-icon-div:hover,
+.services .serv-icon-div:hover,
+.services .icon-span:hover,
+.services .service-icon-span:hover,
+.services .serv-icon-span:hover,
+.services .icon-p:hover,
+.services .service-icon-p:hover,
+.services .serv-icon-p:hover,
+.services .icon-h1:hover,
+.services .service-icon-h1:hover,
+.services .serv-icon-h1:hover,
+.services .icon-h2:hover,
+.services .service-icon-h2:hover,
+.services .serv-icon-h2:hover,
+.services .icon-h3:hover,
+.services .service-icon-h3:hover,
+.services .serv-icon-h3:hover,
+.services .icon-h4:hover,
+.services .service-icon-h4:hover,
+.services .serv-icon-h4:hover,
+.services .icon-h5:hover,
+.services .service-icon-h5:hover,
+.services .serv-icon-h5:hover,
+.services .icon-h6:hover,
+.services .service-icon-h6:hover,
+.services .serv-icon-h6:hover {
+  color: #000000 !important;
+  fill: #000000 !important;
+  stroke: #000000 !important;
+  background-color: transparent !important;
+  border-color: #000000 !important;
+}
+
 /* Cards / items */
 .item, .box, .info, .blog .item .box, .portfolio .item .cont, .sub-bg {
   background: #ffffff; color: #111; border-color: rgba(0,0,0,0.08);
@@ -99,7 +505,7 @@ a:hover { color: var(--accent-blue-2); }
 ::selection { background: rgba(30,136,255,0.25); color: #111; }
 
 /* Footer */
-footer { background: #f0f3f9; color: #111; }
+footer { background: #E7EAEE; color: #111; }
 footer a { color: var(--accent-blue); }
 
 /* ===== Enhanced visibility for Light mode ===== */
@@ -219,7 +625,7 @@ footer a { color: var(--accent-blue); }
 /* Intro (en-tête) cards: fond Light rétabli */
 .intro-profile .box-img.main-bg,
 .intro-profile .content.main-bg {
-  background: #f7f8fb !important;
+  background: #E7EAEE !important;
 }
 
 /* Remove background for email strip and name box */
@@ -316,4 +722,301 @@ footer a { color: var(--accent-blue); }
 .experience span, .experience div, .experience li, .experience small, .experience strong, .experience em,
 .professional-journey span, .professional-journey div, .professional-journey li, .professional-journey small, .professional-journey strong, .professional-journey em {
   color: #333333 !important;
+}
+
+/* ===== FORCE LIGHT GRAY BACKGROUND FOR ALL ELEMENTS ===== */
+/* Force light gray background for all containers and cards */
+.container,
+.row,
+.col,
+.col-md-6,
+.col-lg-4,
+.col-lg-6,
+.col-lg-8,
+.col-lg-12,
+.card,
+.panel,
+.wrapper,
+.content,
+.main-content,
+.section,
+.section-padding,
+.sec-box,
+.box,
+.item,
+.info,
+.cont,
+.text,
+.description,
+.intro,
+.hero,
+.header,
+.navbar,
+.nav,
+.menu,
+.dropdown,
+.modal,
+.popup,
+.tooltip,
+.alert,
+.notification,
+.badge,
+.tag,
+.label,
+.button,
+.btn,
+.link,
+.nav-link,
+.tab,
+.accordion,
+.carousel,
+.slider,
+.gallery,
+.grid,
+.flex,
+.flexbox,
+.flex-container,
+.flex-item,
+.flex-row,
+.flex-col,
+.flex-wrap,
+.flex-nowrap,
+.flex-start,
+.flex-end,
+.flex-center,
+.flex-between,
+.flex-around,
+.flex-evenly,
+.flex-auto,
+.flex-1,
+.flex-none,
+.flex-grow,
+.flex-shrink,
+.flex-basis,
+.flex-order,
+.flex-direction,
+.flex-wrap,
+.flex-flow,
+.flex-justify,
+.flex-align,
+.flex-align-items,
+.flex-align-content,
+.flex-align-self,
+.flex-gap,
+.flex-basis,
+.flex-grow,
+.flex-shrink,
+.flex-order,
+.flex-direction,
+.flex-wrap,
+.flex-flow,
+.flex-justify,
+.flex-align,
+.flex-align-items,
+.flex-align-content,
+.flex-align-self,
+.flex-gap {
+  background-color: #E7EAEE !important;
+}
+
+/* Force light gray background for all pseudo-elements */
+*::before,
+*::after,
+*:before,
+*:after {
+  background-color: #E7EAEE !important;
+}
+
+/* Force light gray background for all states */
+*:hover,
+*:focus,
+*:active,
+*:visited,
+*:link,
+*:target,
+*:checked,
+*:selected,
+*:disabled,
+*:enabled,
+*:valid,
+*:invalid,
+*:required,
+*:optional,
+*:read-only,
+*:read-write,
+*:placeholder-shown,
+*:not(:placeholder-shown),
+*:in-range,
+*:out-of-range,
+*:user-invalid,
+*:user-valid {
+  background-color: #E7EAEE !important;
+}
+
+/* ===== CARTES EN BLANC ===== */
+/* Force white background for all cards */
+.card,
+.panel,
+.box,
+.item,
+.cont,
+.info,
+.testimonial-card,
+.testimonial-item,
+.pricing-card,
+.pricing-item,
+.service-card,
+.service-item,
+.portfolio-card,
+.portfolio-item,
+.work-card,
+.work-item,
+.blog-card,
+.blog-item,
+.contact-card,
+.contact-item,
+.resume-card,
+.resume-item,
+.timeline-card,
+.timeline-item,
+.experience-card,
+.experience-item,
+.skill-card,
+.skill-item,
+.about-card,
+.about-item {
+  
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+}
+
+/* ===== TÉMOIGNAGES SPÉCIFIQUES ===== */
+/* Section témoignages avec fond gris clair */
+.testimonials {
+  background-color: #E7EAEE !important;
+}
+
+/* Cartes de témoignages en blanc pur */
+.testimonials .item {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+  border-radius: 8px !important;
+}
+
+/* Conteneur des témoignages */
+.testimonials .cont {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+  border-radius: 8px !important;
+}
+
+/* Texte des témoignages en noir */
+.testimonials .item *,
+.testimonials .cont * {
+  color: #121212 !important;
+}
+
+/* Titres des témoignages */
+.testimonials h1,
+.testimonials h2,
+.testimonials h3,
+.testimonials h4,
+.testimonials h5,
+.testimonials h6 {
+  color: #0b0b0b !important;
+}
+
+/* Paragraphes des témoignages */
+.testimonials p {
+  color: #333333 !important;
+}
+
+/* Étoiles de notation */
+.testimonials .stars,
+.testimonials .rating,
+.testimonials .star,
+.testimonials .star-rating,
+.testimonials .testimonial-stars,
+.testimonials .testimonial-rating,
+.testimonials .testimonial-star {
+  color: #FFD700 !important;
+}
+
+/* Nom de l'auteur */
+.testimonials .author,
+.testimonials .name,
+.testimonials .testimonial-author,
+.testimonials .testimonial-name,
+.testimonials .testimonial-user,
+.testimonials .testimonial-client,
+.testimonials .testimonial-customer {
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+/* Titre de l'auteur */
+.testimonials .title,
+.testimonials .position,
+.testimonials .job,
+.testimonials .role,
+.testimonials .testimonial-title,
+.testimonials .testimonial-position,
+.testimonials .testimonial-job,
+.testimonials .testimonial-role {
+  color: #666666 !important;
+}
+
+/* ===== ICÔNES DES SERVICES EN MODE CLAIR ===== */
+/* Forcer l'utilisation des icônes du mode clair */
+.services .icon-img-60 img[src*="serv-img/1.png"] {
+  content: url("../imgs/serv-img/1.png") !important;
+}
+
+.services .icon-img-60 img[src*="serv-img/2.png"] {
+  content: url("../imgs/serv-img/2.png") !important;
+}
+
+.services .icon-img-60 img[src*="serv-img/3.png"] {
+  content: url("../imgs/serv-img/3.png") !important;
+}
+
+.services .icon-img-60 img[src*="serv-img/4.png"] {
+  content: url("../imgs/serv-img/4.png") !important;
+}
+
+/* Alternative: utiliser les icônes du dossier light */
+.services .icon-img-60 img {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) !important;
+}
+
+/* Titre des témoignages */
+.testimonials h1,
+.testimonials h2,
+.testimonials h3,
+.testimonials h4,
+.testimonials h5,
+.testimonials h6 {
+  color: #0b0b0b !important;
+}
+
+/* Paragraphes des témoignages */
+.testimonials p {
+  color: #333333 !important;
+}
+
+/* Noms et titres dans les témoignages */
+.testimonials .name,
+.testimonials .author,
+.testimonials .title,
+.testimonials .position {
+  color: #121212 !important;
+}
+
+/* Étoiles et avis */
+.testimonials .stars,
+.testimonials .rating,
+.testimonials .review-count {
+  color: #121212 !important;
 }
