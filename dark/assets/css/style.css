@@ -92,7 +92,7 @@ body:before {
 
 @media (max-width: 768px) {
   .logo {
-    width: 50px;
+    width: 50px !important;
     height: auto !important;
   }
 }
