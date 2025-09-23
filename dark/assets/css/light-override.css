@@ -994,47 +994,56 @@ footer a { color: var(--accent-blue); }
 /* ===== LOGO MOBILE ===== */
 /* Réduire la taille du logo sur mobile */
 @media (max-width: 768px) {
-  .header .logo img,
-  .navbar .logo img,
-  .nav-top .logo img {
-    max-width: 40px !important;
-    height: auto !important;
-  }
-  
   .header .logo,
   .navbar .logo,
   .nav-top .logo {
+    width: 80px !important;
     max-width: 80px !important;
+    height: auto !important;
+  }
+  
+  .header .logo img,
+  .navbar .logo img,
+  .nav-top .logo img {
+    width: 80px !important;
+    max-width: 80px !important;
+    height: auto !important;
   }
 }
 
 @media (max-width: 480px) {
-  .header .logo img,
-  .navbar .logo img,
-  .nav-top .logo img {
+  .header .logo,
+  .navbar .logo,
+  .nav-top .logo {
+    width: 60px !important;
     max-width: 60px !important;
     height: auto !important;
   }
   
-  .header .logo,
-  .navbar .logo,
-  .nav-top .logo {
+  .header .logo img,
+  .navbar .logo img,
+  .nav-top .logo img {
+    width: 60px !important;
     max-width: 60px !important;
+    height: auto !important;
   }
 }
 
 @media (max-width: 360px) {
-  .header .logo img,
-  .navbar .logo img,
-  .nav-top .logo img {
+  .header .logo,
+  .navbar .logo,
+  .nav-top .logo {
+    width: 50px !important;
     max-width: 50px !important;
     height: auto !important;
   }
   
-  .header .logo,
-  .navbar .logo,
-  .nav-top .logo {
+  .header .logo img,
+  .navbar .logo img,
+  .nav-top .logo img {
+    width: 50px !important;
     max-width: 50px !important;
+    height: auto !important;
   }
 }
 

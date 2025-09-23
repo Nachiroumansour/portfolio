@@ -90,8 +90,15 @@ body:before {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    width: 50px;
+    height: auto !important;
+  }
+}
+
 .logo{
-    width: 180px !important;
+    width: 180px;
     height: auto !important;
 }
 
