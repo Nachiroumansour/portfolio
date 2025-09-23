@@ -1007,6 +1007,8 @@ footer a { color: var(--accent-blue); }
     text-transform: uppercase !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
     border: 3px solid rgba(255, 255, 255, 0.2) !important;
+    position: relative !important;
+    z-index: 10 !important;
 }
 
 /* Mode sombre - avatars avec couleurs différentes */
@@ -1023,15 +1025,18 @@ body.light-theme .avatar-circle {
 
 /* Couleurs différentes pour chaque avatar */
 .testimonials .swiper-slide:nth-child(1) .avatar-circle {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%) !important;
+    color: white !important;
 }
 
 .testimonials .swiper-slide:nth-child(2) .avatar-circle {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+    background: linear-gradient(135deg, #4834d4 0%, #686de0 100%) !important;
+    color: white !important;
 }
 
 .testimonials .swiper-slide:nth-child(3) .avatar-circle {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+    background: linear-gradient(135deg, #00d2d3 0%, #54a0ff 100%) !important;
+    color: white !important;
 }
 
 /* Mode clair - couleurs plus douces */
@@ -1048,6 +1053,27 @@ body.light-theme .testimonials .swiper-slide:nth-child(2) .avatar-circle {
 body.light-theme .testimonials .swiper-slide:nth-child(3) .avatar-circle {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
     color: white !important;
+}
+
+/* Forcer l'affichage des avatars */
+.testimonials .img .avatar-circle {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%) !important;
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* S'assurer que le conteneur img affiche l'avatar */
+.testimonials .img {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 60px !important;
+    height: 60px !important;
 }
 
 /* ===== LOGO MOBILE ===== */
